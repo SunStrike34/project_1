@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Undocumented function
+ *
+ * @param string $userId
+ * @return array
+ */
 function getUser(string $userId) : array
 {
     $connect = connectToBD();

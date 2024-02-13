@@ -3,7 +3,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/project/src/core.php';
 
 redirectАuthorized();
 
-
 if (!empty($_POST)) {
 
     $request = [

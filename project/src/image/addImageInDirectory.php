@@ -1,5 +1,9 @@
 <?php
 /**
+ * Undocumented function
+ *
+ * @param array $image
+ * @param integer $userId
  * @return void
  */
 function addImageInDirectory(array $image, int $userId): void

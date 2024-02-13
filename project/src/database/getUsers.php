@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Undocumented function
+ *
+ * @return array
+ */
 function getUsers() : array
 {
     $connect = connectToBD();

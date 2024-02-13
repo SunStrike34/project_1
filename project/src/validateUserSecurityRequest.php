@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Undocumented function
+ *
+ * @param array $request
+ * @return bool | array
+ */
 function validateUserSecurityRequest(array $request) : bool | array
 {
     if ((!is_null($request['password1']) && is_null($request['password2'])) || 

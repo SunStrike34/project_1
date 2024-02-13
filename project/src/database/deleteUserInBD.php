@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Undocumented function
+ *
+ * @param string $userId
+ * @return boolean
+ */
 function deleteUserInBD(string $userId) : bool
 {
     $connect = connectToBD();

@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Undocumented function
+ *
+ * @param array $user
+ * @return void
+ */
 function authorize(array $user = []) : void
 {
     $_SESSION['auth'] = true;
@@ -8,11 +13,21 @@ function authorize(array $user = []) : void
     $_SESSION['role'] = $user['role'];
 }
 
+/**
+ * Undocumented function
+ *
+ * @return boolean
+ */
 function isAuthorized() : bool
 {
     return (bool) ($_SESSION['auth'] ?? false);
 }
 
+/**
+ * Undocumented function
+ *
+ * @return void
+ */
 function logout() : void
 {
     $_SESSION['auth'] = false;
@@ -21,6 +36,12 @@ function logout() : void
     $_SESSION['role'] = '';
 }
 
+/**
+ * Undocumented function
+ *
+ * @param string $location
+ * @return void
+ */
 function redirectExited(string $location = 'page_login.php') : void
 {
     if (! isAuthorized()) {
@@ -29,6 +50,12 @@ function redirectExited(string $location = 'page_login.php') : void
     }
 }
 
+/**
+ * Undocumented function
+ *
+ * @param string $location
+ * @return void
+ */
 function redirectАuthorized(string $location = 'users.php') : void
 {
     if (isAuthorized()) {
@@ -37,6 +64,11 @@ function redirectАuthorized(string $location = 'users.php') : void
     }
 }
 
+/**
+ * Undocumented function
+ *
+ * @return string
+ */
 function currentUser() : string
 {
     return $_SESSION['fullname'] ?? '';

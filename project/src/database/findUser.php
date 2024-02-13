@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Undocumented function
+ *
+ * @param string $email
+ * @return array
+ */
 function findUser(string $email) : array
 {
     $connect = connectToBD();

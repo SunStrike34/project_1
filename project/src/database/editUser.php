@@ -1,6 +1,12 @@
 <?php
-
-function editUser(array $user, string $userId)
+/**
+ * Undocumented function
+ *
+ * @param array $user
+ * @param string $userId
+ * @return bool
+ */
+function editUser(array $user, string $userId) : bool
 {
     $connect = connectToBD();
 
